@@ -19,7 +19,7 @@ class Zoo:
         print("This was deleted - ", self._zooName)
 
     def __str__(self):  # making tostring equivalent
-        return self._zooName + " " + str(self._entranceFee) + " " + self._exoticAnimal + " " + str(self._iceCreamCartsCount) + " " + str(self._visitorsCountOverYear)
+        return self._zooName + ", " + str(self._entranceFee) + ", " + self._exoticAnimal + ", " + str(self._iceCreamCartsCount) + ", " + str(self._visitorsCountOverYear)
 
     @staticmethod
     def KowalskiAnalyze(analysis_timing):
