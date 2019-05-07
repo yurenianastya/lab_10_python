@@ -26,10 +26,6 @@ class Zoo:
         Zoo._kowalski_time_for_analysis += analysis_timing
         return Zoo._kowalski_time_for_analysis
 
-    @property
-    def kowalski_time_for_analysis(self):
-        return self._kowalski_time_for_analysis
-
 
 def main():
     tropicarium = Zoo("Budapest's Tropicarium", 14500, 1600, 0, "Stingray")
@@ -38,8 +34,10 @@ def main():
     print(str(tropicarium))
     print(str(africarium))
     print(str(openZoo))
+    print("Kowalski, analyze!")
     print(Zoo._kowalski_time_for_analysis)
     Zoo.KowalskiAnalyze(50)
+    print("Kowalski, analyze!")
     print(Zoo._kowalski_time_for_analysis)
 
 
